@@ -16,3 +16,20 @@
 <li><%= @third_contact.email %></li>
 <li><%= @third_contact.phone_number %></li>
 </ul><br>
+
+
+
+<% @contacts.each do |contact| %>
+  <h2><%= contact.first_name + " " %><%= contact.last_name %></h2>
+    <ul>
+      <li><%= contact.email %></li>
+      <li><%= contact.phone_number %></li>
+      </ul><br>
+<% end %>
+
+
+
+
+
+
+
