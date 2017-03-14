@@ -4,3 +4,8 @@
       <li><%= @contact.email %></li>
       <li><%= @contact.phone_number %></li>
 </ul>
+
+<div>
+<a href="/contacts/<%= @contact.id %>/edit">Edit</a>
+<br>
+<%= link_to "Destroy Contact", "/contacts/#{@contact.id}", method: :delete %>

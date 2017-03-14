@@ -1,12 +1,12 @@
 <h1>Contact Info</h1>
-<a href="/new_contact_url"> New Contact </a>
+<a href="/contacts/new"> New Contact </a>
 <% @contacts.each do |contact| %>
   <h2><%= contact.first_name + " " %><%= contact.last_name %></h2>
     <ul>
       <li><%= contact.email %></li>
       <li><%= contact.phone_number %></li>
       </ul><br>
-<a href="/one_contact_url/<%= contact.id %>">More info</a>
+<a href="/contacts/<%= contact.id %>">More info</a>
 <% end %>
 
 
